@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+     <link rel="icon" type="image/png"href="https://www.google.com/s2/u/0/favicons?domain=css-tricks.com"><!--favicon --> 
+    <title>template</title>
+</head>
+<body>
+
+    <div class="game-container">
+        <div class="header">
+            <h1>Math sprint game</h1>
+        </div>
+        <div class="card" id="splash-page" >
+            <form  id="start-form">
+                <div class="selection-container">
+                    <div class="radio-conatiner">
+                        <label for="value-10">10 questions</label>
+                        <input type="radio" name="questions" value="10" id="value-10">
+                        <span class="best-score">
+                            <span>Best score</span>
+                            <span class="best-score-value">0.0s</span>
+                        </span>
+                    </div>
+                    <div class="radio-conatiner">
+                        <label for="value-25">25 questions</label>
+                        <input type="radio" name="questions" value="25" id="value-25">
+                        <span class="best-score">
+                            <span>Best score</span>
+                            <span class="best-score-value">0.0s</span>
+                        </span>
+                    </div>
+                    <div class="radio-conatiner">
+                        <label for="value-50">50 questions</label>
+                        <input type="radio" name="questions" value="50" id="value-50">
+                        <span class="best-score">
+                            <span>Best score</span>
+                            <span class="best-score-value">0.0s</span>
+                        </span>
+                    </div>
+                    <div class="radio-conatiner selected-label">
+                        <label for="value-99">99 questions</label>
+                        <input type="radio" name="questions" value="99" id="value-99">
+                        <span class="best-score">
+                            <span>Best score</span>
+                            <span class="best-score-value">0.0s</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="selection-footer">
+                    <button class="start" type="submit">
+                        Start round
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="card" id="countdown-page" hidden >
+            <h1 class="countdown">3</h1>
+        </div>
+        <div class="card" id="game-page" hidden>
+            <div class="item-container">
+                <div class="selected-item"></div>
+                <div class="item">
+                    <h1>3 x 3 = 30</h1>
+                </div>
+                <div class="item">
+                    <h1>3 x 3 = 30</h1>
+                </div>
+                <div class="item">
+                    <h1>3 x 3 = 30</h1>
+                </div>
+                <div class="item">
+                    <h1>3 x 3 = 30</h1>
+                </div>
+                <div class="item">
+                    <h1>3 x 3 = 30</h1>
+                </div>
+                <div class="item">
+                    <h1>3 x 3 = 30</h1>
+                </div>
+                <div class="item">
+                    <h1>3 x 3 = 30</h1>
+                </div>
+                <div class="item">
+                    <h1>3 x 3 = 30</h1>
+                </div>
+            </div>
+            <div class="item-footer">
+                <button class="wrong">Wrong</button>
+                <button class="right">right</button>
+            </div>
+        </div>
+        <div class="card" id="score-page" hidden>
+            <div class="score-container">
+                <h1 class="title">your time</h1>
+                <h1 class="final-time">3.4s</h1>
+                <h1 class="base-time">Base Time:2.4s</h1>
+                <h1 class="penalty-time">Penalty:+1.0s</h1>
+            </div>
+            <div class="score-footer">
+                <button class="play-again">play again</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
